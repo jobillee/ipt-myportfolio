@@ -1,43 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
+    <!-- Bootstrap CSS -->
 
+    <title>My Personal Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
   <body>
-    
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link fs-4 mx-3" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4 mx-3" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4 mx-3" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4 mx-3" href="#">Contacts</a>
-          </li>
-        </ul>
+   
+     <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg shadow">
+        <div class="container-fluid mx-5">
+          <!-- logo -->
+           <a href="#" class="navbar-brand">
+            <img src="pics/icons/j logo.png" alt="J logo" style="width:80px; height:80px;">
+           </a>
+           <!-- Toggler for Mobile View-->
+            <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              
+            </button>
+
+            <!-- Navbar Content-->
+             <div class="collapse navbar-collapse justify-content-between"
+              id="navbarResponsive">
+
+              <!-- Centered Menu-->
+               <ul class="navbar-nav mx-auto gap-lg-5">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active" aria-current="page">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link active" aria-current="page">About Me</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link active" aria-current="page">Contact</a>
+                </li>
+
+               </ul>
+
+                </form>
+             </div>
+        </div>
+
+      </nav>
+      <div class="container main">
+        <!-- Header-->
+         <header class="py-5">
+            <div class="container px-5 pb-5">
+              <div class="row gx-5 align-items-center">
+                <div class="col-xxl-5">
+                   <!-- Header text content-->
+                    <div class="text-center text-xxl-start">
+                        <div class="badge mb-4">
+                           <div class="text-uppercase">
+                            Design &middot; Development &middot; Practice
+                           </div> 
+                        </div>
+                        <div class="fs-3 fw-light text-muted">
+                            I am a 2nd year student in St. Peter's College
+                        </div>
+                        <h1 class="display-3 fw-bolder mb-5">
+                            <span class="text-gradient d-inline">
+                               Jobillee Umbao
+                            </span>
+                        </h1>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                            <a href="#" class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-5 fw-bolder">Hire Me</a>
+                            <a href="#" class="btn btn-outline-dark btn-lg px-5 py-3 fs-5 fw-bolder">Projects</a>
+                        </div>
+
+                    </div> 
+                </div>
+                <div class="col-xxl-7">
+                    <!-- Header profile picture -->
+                     <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                        <img src="pics/icons/profile.png" alt="profile" loading="lazy" class="profile-img">
+
+                     </div>
+                </div>
+              </div>  
+            </div>
+         </header>
+         
+          <!-- About -->
+           <section class="bg-light py-5">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-8">
+                  <div class="text-center my-5">
+                    <h2 class="display-5 fw-bolder ">
+                      <span class="text-gradient d-inline">About Me</span>
+                    </h2>
+                    <p class="lead fw-light mb-4">
+                      My Name is Jobillee Umbao a Student in St. Peter's College and i dream to make my self understand and learn more about Web Development/Design.
+                    </p>
+                    <p class="text-muted">
+                      I practice developing and designing Websites through the projects i've encountered.
+                    </p>
+                    <div class="d-flex justify-content-center gap-4 mt-4">
+                       <a href="#" aria-label="facebook">
+                        <img src="pics/icons/facebook.png" alt="facebook">
+
+                       </a>
+                       <a href="#" aria-label="LinkedIn">
+                        <img src="pics/icons/linkedin.png" alt="LinkedIn">
+
+                       </a>
+                       <a href="#" aria-label="gmail">
+                        <img src="pics/icons/gmail.png" alt="gmail">
+
+                       </a>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           </section>
+           <!--Skills-->
+            <section class="py-5">
+              <div class="container px-5">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mb-4">
+                      <h2>Technology Stack</h2>
+                    </div>
+                      <div>
+                        <small>HTML</small>
+                          <div class="progress mb-3 h-20">
+                            <div class="progress-bar" role="progressbar" style="width:55%"
+                            aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <div>
+                          <small>CSS</small>
+                          <div class="progress mb-3 h-20">
+                            <div class="progress-bar" role="progressbar" style="width:40%"
+                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <small>JAVA SCRIPT</small>
+                          <div class="progress mb-3 h-20">
+                            <div class="progress-bar" role="progressbar" style="width:35%"
+                            aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-4">
+                      <h2>Soft Skills</h2>
+                    </div>
+                      <div>
+                        <small>Communication</small>
+                          <div class="progress mb-3 h-20">
+                            <div class="progress-bar" role="progressbar" style="width:70%"
+                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <div>
+                          <small>Problem Solving</small>
+                          <div class="progress mb-3 h-20">
+                            <div class="progress-bar" role="progressbar" style="width:50%"
+                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--Portfolio-->
+            <scection class="bg-light py-5">
+              <div class="container px-5">
+                <div class="text-center mb-4">
+                  <h2 class="display-5 fw-bolder">
+                    <span class="d-inline">Featured Projects</span>
+                  </h2>
+                </div>
+                <div class="row g-3">
+                  <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+                    <div class="card h-100">
+                      <img src="" alt="Weather Update" class="card-img" loding="lazy">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+                    <div class="card h-100">
+                      <img src="" alt="Contact Form" class="card-img" loding="lazy">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+                    <div class="card h-100">
+                      <img src="https://github.com/jobillee/weather-final" alt="JSON Output" class="card-img" loding="lazy">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+                    <div class="card h-100">
+                      <img src="" alt="Shopping Cart" class="card-img" loding="lazy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </scection>
       </div>
-    </nav>
 
-    <div class="container-fluid mt-3 text-white ">
+    <!-- Optional JavaScript; choose one of the two! -->
 
-      <h3 class="text-lg-end"><strong>Jobillee Umbao</strong></h3>
-
-      <p class="text-lg-end">A 2nd Year IT student in St. Peter's College</p>
-      <p class="text-lg-end">This my First Portfolio Profile</p>
-    </div>
-     <
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
   </body>
 </html>
